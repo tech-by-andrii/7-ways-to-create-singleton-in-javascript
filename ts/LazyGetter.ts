@@ -1,7 +1,7 @@
-class LazyGetter {
-    private static instanceCache?: Lazy
+class LazyGetterSingleton {
+    private static instanceCache?: LazyGetterSingleton
 
-    public static get instance(): Lazy {
+    public static get instance(): LazyGetterSingleton {
         if (!this.instanceCache) {
             this.instanceCache = new this();
         }
@@ -12,4 +12,4 @@ class LazyGetter {
     public invoke(): void {};
 }
 
-LazyGetter.instance.invoke()
+LazyGetterSingleton.instance.invoke()

@@ -1,8 +1,8 @@
-class Classic {
-    public static instance: Classic = new this();
+class ClassicSingleton {
+    public static instance: ClassicSingleton = new this();
 
     public invoke(): void {};
 }
 
-Classic.instance.invoke();
+ClassicSingleton.instance.invoke();
 

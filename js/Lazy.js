@@ -1,4 +1,4 @@
-class Lazy {
+class LazySingleton {
     static _instanceCache
 
     static instance() {
@@ -12,4 +12,4 @@ class Lazy {
     invoke() {};
 }
 
-Lazy.instance().invoke();
+LazySingleton.instance().invoke();

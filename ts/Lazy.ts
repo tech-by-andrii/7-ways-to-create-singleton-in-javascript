@@ -1,7 +1,7 @@
-class Lazy {
-    private static instanceCache?: Lazy
+class LazySingleton {
+    private static instanceCache?: LazySingleton
 
-    public static instance(): Lazy {
+    public static instance(): LazySingleton {
         if (!this.instanceCache) {
             this.instanceCache = new this();
         }
@@ -12,4 +12,4 @@ class Lazy {
     public invoke(): void {};
 }
 
-Lazy.instance().invoke();
+LazySingleton.instance().invoke();

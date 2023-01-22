@@ -1,8 +1,8 @@
 class ConstructorSingleton {
-    static cache = new this();
+    static _cache = new this();
 
     constructor() {
-        return this.constructor.cache;
+        return this.constructor._cache;
     }
 
     invoke() {};

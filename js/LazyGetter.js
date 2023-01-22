@@ -1,4 +1,4 @@
-class LazyGetter {
+class LazyGetterSingleton {
     static _instanceCache
 
     static get instance() {
@@ -12,4 +12,4 @@ class LazyGetter {
     invoke() {};
 }
 
-LazyGetter.instance.invoke()
+LazyGetterSingleton.instance.invoke()
